@@ -40,7 +40,7 @@ running cat <&3 gave me the flag.
 
 
 
-FLAG - PClub{Franklin_Reiter_is_cool}
+## FLAG - PClub{Franklin_Reiter_is_cool}
 
 So started off by connecting with netcat to the given server
 
