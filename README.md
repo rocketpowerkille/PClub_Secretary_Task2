@@ -14,6 +14,7 @@ tried running 'chmod +x file_chal' but it was pointless since the file was alrea
 
 after re-reading the .c file
 
+```
 #include <fcntl.h>
 #include <unistd.h>
 
@@ -28,6 +29,7 @@ int main () {
     execvp ("/bin/sh", args);
     return 0;
 }
+```
 
 we can see the code is executing a shell, and there is a file descripter involved.
 now, we know that 0 -> stdin, 1->stdout, 2->stderr, so, since the fd is never really closed, 
