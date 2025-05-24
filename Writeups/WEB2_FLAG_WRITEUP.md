@@ -1,4 +1,4 @@
-FLAG - PClub{4lw4ys_cl05e_y0ur_fil3s}
+## FLAG - PClub{4lw4ys_cl05e_y0ur_fil3s}
 
 Well this challenge was not that hard despite me panicking I managed to do it in like 30 minutes.
 
@@ -7,7 +7,6 @@ first connected to the server with netcat. Then used 'ls' to list all the conten
 file_chal and file_chal.c came up 
 
 using 'cat' opened file_chal.c and it was this
-(insert photo)
 
 Then doing 'ls -l' told me the permissions of all the files in the directory 
 
@@ -33,3 +32,5 @@ int main () {
 we can see the code is executing a shell, and there is a file descripter involved.
 now, we know that 0 -> stdin, 1->stdout, 2->stderr, so, since the fd is never really closed, 
 running cat <&3 gave me the flag.
+
+![alt text](../Assets/WEB2_PHOTO1.jpg)
