@@ -131,6 +131,7 @@ did 'ls' and saw root and then decided to go to cd root
 did 'ls' saw flag(lfggg)
 
 'cat flag' gave me the flag.
+
 ![alt text](Assets/WEB3_PHOTO1.png)
 
 
