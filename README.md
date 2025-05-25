@@ -1,7 +1,7 @@
 ## BY - VISHU KHARE
 
 
-## FLAG - PClub{idk_how_this_got_typed}
+## FLAG 1 - PClub{idk_how_this_got_typed}
 
 So the author's real name was Kalpit Lal Rama and after checking the source of the page and using inspect element I found nothing.
 
@@ -23,7 +23,7 @@ I noticed in the edit history another recent edit from a account named KapilLal2
 ![alt text](Assets/OSINT_PHOTO3.png)
 
 
-## FLAG - PClub{Easy LFI}
+## FLAG 2 - PClub{Easy LFI}
 
 Well this one was a nightmare(I used to run away from web).
 
@@ -66,7 +66,7 @@ used ffuf to find the number of levels down we have to go to get to the root and
 ![alt text](Assets/WEB_PHOTO1.jpg)
 
 
-## FLAG - PClub{4lw4ys_cl05e_y0ur_fil3s}
+## FLAG 3 - PClub{4lw4ys_cl05e_y0ur_fil3s}
 
 Well this challenge was not that hard despite me panicking I managed to do it in like a hour.
 
@@ -105,7 +105,7 @@ now, we know that 0 -> stdin, 1->stdout, 2->stderr, so running 'cat <&3' gave me
 ![alt text](/Assets/WEB2_PHOTO1.jpg)
 
 
-## FLAG - PClub{y0u_ar3_in_7he_sudoers_th1s_1nc1d3nt_will_n0t_be_rep0r7ed}
+## FLAG 4 - PClub{y0u_ar3_in_7he_sudoers_th1s_1nc1d3nt_will_n0t_be_rep0r7ed}
 
 Took me the longest time to solve this one :(
 
@@ -138,7 +138,7 @@ did 'ls' saw flag(lfggg!!!!)
 ![alt text](Assets/WEB3_PHOTO1.png)
 
 
-## FLAG - PClub{Franklin_Reiter_is_cool}
+## FLAG 5 - PClub{Franklin_Reiter_is_cool}
 
 So started off by connecting with netcat to the given server
 
