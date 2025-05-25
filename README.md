@@ -68,7 +68,7 @@ used ffuf to find the number of levels down we have to go to get to the root and
 
 ## FLAG - PClub{4lw4ys_cl05e_y0ur_fil3s}
 
-Well this challenge was not that hard despite me panicking I managed to do it in like 30 minutes.
+Well this challenge was not that hard despite me panicking I managed to do it in like a hour.
 
 first connected to the server with netcat. Then used 'ls' to list all the contents in that directory.
 
@@ -100,13 +100,14 @@ int main () {
 ```
 
 we can see the code is executing a shell, and there is a file descripter involved.
-now, we know that 0 -> stdin, 1->stdout, 2->stderr, so, since the fd is never really closed, 
-running cat <&3 gave me the flag.
+now, we know that 0 -> stdin, 1->stdout, 2->stderr, so running 'cat <&3' gave me the flag.
 
 ![alt text](/Assets/WEB2_PHOTO1.jpg)
 
 
 ## FLAG - PClub{y0u_ar3_in_7he_sudoers_th1s_1nc1d3nt_will_n0t_be_rep0r7ed}
+
+Took me the longest time to solve this one :(
 
 Did 'ls' after connecting through netcat and found nothing
 
@@ -120,6 +121,8 @@ got '/bin/vim' as superuser with no password.
 
 ran '/bin/vim' but there were font issues or something(as per gpt), so doing :!sh did not work.
 
+wasted a lot of time on vim and realized there was no point.
+
 force exited from the vim.
 
 ran 'sudo vim -c "!sh"' trying to gain the root access.
@@ -128,7 +131,7 @@ after that, tried 'cd ..' trying to go back a directory
 
 did 'ls' and saw root and then decided to go to cd root
 
-did 'ls' saw flag(lfggg)
+did 'ls' saw flag(lfggg!!!!)
 
 'cat flag' gave me the flag.
 
