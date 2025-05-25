@@ -14,7 +14,7 @@ There was this 8 month old post which had these random numbers with a comment hi
 
 Upon trying all the permutations of recipes on cyberchef I got frustrated and just put the numbers on dcode.fr cipher analyzer and it gave base 36 as the best option , upon translating got the link for a insta account (https://www.instagram.com/i_like_anonymity_sometimes1212/)
 
-upon analyzing all the posts and the spam highlight(and wasting my 15 mins on the Mahe Drysdale wiki cause the photo was different)I was finally on the Thomas keller medal wiki page.
+upon analyzing all the posts and the spam highlight(and wasting my 15 mins on the Mahe Drysdale wiki cause the photo was different) I was finally on the Thomas keller medal wiki page.
 
 And since the highlight said - "hope i didn't leak something" thinking Wikipedia is editable i viewed the edit history of the page and taking the date 29th September from the highlight , I saw the edit on that day from user Kapilx19 and clicking on the difference options which shows us the edit between the changed and original site I got this fake flag(Fake cause well all the flags had format PClub{})
 ![alt text](Assets/OSINT_PHOTO2.png)
@@ -35,7 +35,7 @@ next I did steg analysis on all the photos available on the whole website and fo
 
 then I found the link for the localhost of grafana and decided to try 1=1 and random break-throughs until user admin and pass admin worked.
 
-When I saw the option to change password for the admin , I was reluctant to do that as I thought that this might destroy the integrity of the challenge but after waking up next day I find myself logged out with the password changed and then I was well ready to war.
+When I saw the option to change password for the admin , I was reluctant to do that as I thought that this might destroy the integrity of the challenge but after waking up next day I find myself logged out with the password changed and then well I was ready to war.
 
 Found various grafana vulnerabilities due to it being the older version 8.3.0 and found various CVE's which explained the vulnerabilities 
 and I had to basically find a exploit to them. 
@@ -44,7 +44,7 @@ Used nmap to scan all the available ports and googled a lot to find ways to use 
 
 Used nikto to scan the website and also find any sub-domains which could be of use.
 
-tried sqlmap and burpsuite and still did not get anything(elaborate more on this)
+tried automated injections using sqlmap and checking traffic using burpsuite and still did not get anything
 
 By now I had already found the reddit account used in the OSINT challenge and was busy doing steg and connecting those numbers with rowing statistics and anything that I really saw related to rowing which wasted quite a lot of time.
 
@@ -53,7 +53,7 @@ when i got free from all this and decided to go back to Grafana and found the we
 Kept checking constantly and as soon as it came back online i logged in ( thankfully admin credentials were working ) and i changed the password forcing others to try and breach through the login page.
 
 It was not really needed at this point for me to do that cause i had already found a pdf which gave detailed step by step on how to exploit and login but well why not .
-(insert ambassador.pdf )
+
 
 found myself doing random tries after logging in , like looking at cookies and decrypting possibly anything which had (=) in the end 
 (i had lost my mind at this point)
@@ -182,13 +182,14 @@ If we give two different paddings, we can form two different equations
 c1 = ((m+p1)^3) %n
 c2 = ((m+p2)^3) %n
 
-Now I assumed ((m+p1)^3) and ((m+p2)^3) to be less than n as a test but it ended up being correct(but for some reason directly finding the cuberoot did not work),
+Now I assumed ((m+p1)^3) and ((m+p2)^3) to be less than n as a test but it ended up being correct,
 
 c2 -c1 = (m+p2)^3 - (m+p1)^3
 
 we know p2 and p1, so we can say d = p2-p1, and a = m+p1
 
 therefore, c2-c1 = (a+d)^3 - a^3
+
 c2-c1 = 3da^2 + 3ad^2 + d^3
 
 if we rearrange the equation, we get
@@ -234,6 +235,7 @@ and here comes the flag
 Nice work breaking through this SECURE SYSTEM! You deserve this flag: PClub{Franklin_Reiter_is_cool}
 ```
 
+## CHALLENGE 6
 
 Well sadly did not find the flag for this next one.
 
